@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class binarymultiple {
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first binary number: ");
+        String binary1 = sc.nextLine();
+        System.out.print("Enter second binary number: ");
+        String binary2 = sc.nextLine();
+        int a = Integer.parseInt(binary1, 2);
+        int b = Integer.parseInt(binary2, 2);
+        int product = a * b;
+        String solution = Integer.toBinaryString(product);
+        System.out.println("Product of binary numbers: " + solution);
+        sc.close();
+    }
+}
