@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class octaltohexa {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter octal number: ");
+        String octal = sc.nextLine();
+        int decimal = Integer.parseInt(octal, 8);
+        String hexadecimal = Integer.toHexString(decimal).toUpperCase();
+        System.out.println("Hexadecimal = " + hexadecimal);
+        sc.close();
+    }
+}
+
