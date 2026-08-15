@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class decimaltohexa {
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter decimal number: ");
+        int decimal = sc.nextInt();
+        String hexadecimal = Integer.toHexString(decimal).toUpperCase();
+        System.out.println("Hexadecimal = " + hexadecimal);
+        sc.close();
+    }
+}
